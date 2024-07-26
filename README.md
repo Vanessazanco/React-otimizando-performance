@@ -1,3 +1,5 @@
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 
 <h1>Aluroni</h1>
 Bem-vindo ao projeto Aluroni! Este projeto foi desenvolvido para demonstrar a manipulação de rotas utilizando a biblioteca React Router, proporcionando uma navegação fluida e dinâmica dentro de uma aplicação React. Aluroni é uma loja online de comida especializada na venda de massas, carnes e outros produtos alimentícios.
