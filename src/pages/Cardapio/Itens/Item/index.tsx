@@ -1,8 +1,9 @@
 import styles from './Item.module.scss';
 import { Prato } from 'types/Prato';
 import TagsPrato from 'components/TagsPrato';
+import { memo } from 'react';
 
-export default function Item(props: Prato) {
+function Item(props: Prato) {
   const { title, description, photo } = props;
   return (
     <div className={styles.item}>
@@ -19,3 +20,8 @@ export default function Item(props: Prato) {
     </div>
   );
 }
+
+export default memo(Item,(propsAnteriores,proximosProps)=> {
+  console.log(propsAnteriores,proximosProps)
+  return false
+});
