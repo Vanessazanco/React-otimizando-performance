@@ -21,7 +21,4 @@ function Item(props: Prato) {
   );
 }
 
-export default memo(Item,(propsAnteriores,proximosProps)=> {
-  console.log(propsAnteriores,proximosProps)
-  return false
-});
+export default memo(Item);
