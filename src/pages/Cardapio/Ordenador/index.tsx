@@ -24,12 +24,12 @@ function Ordenador({
       onBlur={() => setAberto(false)}
     >
       <span>{nomeOrdenador || 'Ordenar Por'}</span>
-      <MdKeyboardArrowUp 
+      {/*<MdKeyboardArrowUp 
         size={20}
         style={{
           transform: `rotate(${aberto ? 0 : 180}deg)`
-        }} /> 
-      {/*aberto ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} />*/ }
+        }} /> */}
+      {aberto ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} /> }
       <div className={classNames({
         [styles.ordenador__options]: true,
         [styles['ordenador__options--ativo']]: aberto
