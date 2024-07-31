@@ -1,6 +1,5 @@
 import Footer from 'components/Footer';
 import Menu from 'components/Menu';
-import PaginaPadrao from 'components/PaginaPadrao';
 import Inicio from 'pages/Inicio';
 import NotFound from 'pages/NotFound';
 import Prato from 'pages/Prato';
@@ -9,13 +8,13 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const Cardapio = lazy(() => import('pages/Cardapio'));
-
+const PaginaPadrao = lazy(() => import('components/PaginaPadrao'));
 
 export default function AppRouter() {
   return (
     <main className='container'>
       <Router>
-        <Suspense fallback={<p>Carregando</p>}>
+        <Suspense fallback={<p>Carregando...</p>}>
           <Menu />
           <Routes>
             <Route path='/' element={<PaginaPadrao />} >
